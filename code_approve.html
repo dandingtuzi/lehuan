@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>防伪码认证</title>
+    <link href="css/global.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <script src="js/setREM.js"></script>
+    </head>
+    <body>
+        <div class="wrap">
+            <!-- header -->
+            <header>
+                <a class="search" href="search.html"></a>
+                <div class="logo"></div>
+                <nav></nav>
+            </header>
+            <!-- content -->
+            <div class="content">
+                <div class="goods_list">
+                    <div class="goods_nav">
+                        <div class="swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <a href="good_direction.html">产品说明书</a>
+                                    <a href="bill.html">菜谱</a>
+                                    <a href="code_approve.html" class="on">防伪码认证</a>
+                                    <a href="">经销商认证</a>
+                                    <a href="">产品保修</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="approve_code">
+                        <p>手机二维码查询！每个二维码都包含产品信息</p>
+                        <p>扫描二维码即可辨别产品真伪</p>
+                        <div class="search_code">
+                            <input type="text" name="" placeholder="请输入防伪码" />
+                            <a href="">搜索</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- footer -->
+            <footer class="footer">
+                <ul>
+                    <li class="index"><i></i><span>首页</span></li>
+                    <li class="menu on"><i></i><span>菜单</span>
+                        <div class="menu_hide">
+                            <a href="">产品中心</a>
+                            <a href="">品牌介绍</a>
+                            <a href="">新闻互动</a>
+                            <a href="">服务支持</a>
+                            <a href="">联系我们</a>
+                        </div>
+                    </li>
+                    <li class="good"><i></i><span>产品</span>
+                        <div class="menu_hide">
+                            <a href="">全部</a>
+                            <a href="">双面锅</a>
+                            <a href="">煎炒锅</a>
+                            <a href="">汤锅</a>
+                            <a href="">小家电</a>
+                            <a href="">配件</a>
+                        </div>
+                    </li>
+                    <li class="my"><i></i><span>我的</span>
+                        <div class="menu_hide">
+                            <a href="">登录</a>
+                            <a href="">注册</a>
+                        </div>
+                    </li>
+                </ul>
+            </footer>
+        </div>
+        <script src="js/jquery-1.11.3.js"></script>
+        <script src="js/swiper.min.js"></script>
+        <script type="text/javascript">
+            var swiper = new Swiper('.swiper-container', {
+                direction: 'horizontal',
+                slidesPerView: 'auto',
+                freeMode: true,
+            });
+            //隐藏菜单
+            $(".menu_hide a").click(function(){
+                $(".menu_hide").hide();
+            })
+       
+        </script>
+    </body>
+</html>
